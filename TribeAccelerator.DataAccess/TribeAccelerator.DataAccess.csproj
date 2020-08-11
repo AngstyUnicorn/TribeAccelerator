@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp3.1\TribeAccelerator.DataAccess.deps.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.DataAccess.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.DataAccess.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.Models.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.Models.pdb" />
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.Utility.dll" />
+    <None Include="bin\Debug\netcoreapp3.1\TribeAccelerator.Utility.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TribeAccelerator.Models\TribeAccelerator.Models.csproj" />
+    <ProjectReference Include="..\TribeAccelerator.Utility\TribeAccelerator.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Release\netcoreapp3.1\" />
+  </ItemGroup>
+
+</Project>
